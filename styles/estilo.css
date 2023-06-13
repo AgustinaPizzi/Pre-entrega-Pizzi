@@ -398,7 +398,7 @@ textarea {
 }
 .row2 {
   display: grid;
-  grid-template-columns: 410px 410px 410px;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 420px;
   row-gap: 49px;
   column-gap: 49px;
@@ -1060,8 +1060,8 @@ textarea {
 }
 .bi {
   display: flex;
-  width: 415px;
-  height: 400px;
+  width: 400px;
+  height: 420px;
   padding: 40px 50px;
   border-radius: 15%;
 }
@@ -1318,9 +1318,161 @@ textarea {
   text-align: center;
   font-family: "menus";
 }
+/* SECCION FUNDAS NOTEBOOKS */
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+
+.funda-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+
+.subtitulo-titulos {
+  padding: 0px;
+  font-size: 25px;
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.container_fundas {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.fn {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+
+.page > nav {
+  grid-area: nav;
+  height: 100%;
+  background-color: #f1e4f3;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+
+.nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+  padding: 8px;
+}
+.cuotas-producto {
+  text-align: center;
+  font-family: "menus";
+}
+/* SECCION CARTERAS */
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+
+.cartera-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+
+.subtitulo-titulos {
+  padding: 0px;
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.container_carteras {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.ca {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+
+.page > nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #f1e4f3;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+
+.nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+  padding: 8px;
+}
+.cuotas-producto {
+  text-align: center;
+  font-family: "menus";
+}
 /* ------------------TABLET--------------------- */
 
 @media only screen and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   h1 {
     font-family: "letramarca";
     font-size: 55px;
@@ -1591,7 +1743,7 @@ textarea {
   }
   .row2 {
     display: grid;
-    grid-template-columns: 410px 410px;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 360px;
     row-gap: 50px;
     column-gap: 65px;
@@ -2026,6 +2178,7 @@ textarea {
     font-family: "menu";
     letter-spacing: normal;
     font-weight: lighter;
+    font-size: 35px;
   }
   .dropdown-menu ul li a {
     font-weight: bold;
@@ -2050,34 +2203,33 @@ textarea {
     align-items: start;
     flex-wrap: wrap;
   }
-
+  .row2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 420px;
+  }
   .item1 {
-    padding: 2px;
+    padding: 5px;
     border-radius: 10px;
     text-align: center;
   }
   .item2 {
-    padding: 5px;
     border-radius: 10px;
     text-align: center;
   }
   .item3 {
-    padding: 5px;
     border-radius: 10px;
     text-align: center;
   }
   .item4 {
-    padding: 5px;
     border-radius: 10px;
     text-align: center;
   }
   .item5 {
-    padding: 5px;
     border-radius: 10px;
     text-align: center;
   }
   .item6 {
-    padding: 5px;
     border-radius: 10px;
     text-align: center;
   }
@@ -2309,6 +2461,7 @@ textarea {
 
   .page > header {
     grid-area: head;
+    height: 100%;
     background-color: #f8c7da;
   }
   .dropdown-menu ul li a {
@@ -2331,6 +2484,7 @@ textarea {
   }
   .page > nav {
     grid-area: nav;
+    height: 100%;
     background-color: #ecf1fb;
   }
 
@@ -2404,7 +2558,7 @@ textarea {
       "nav nav"
       "main main"
       "foot foot";
-    grid-template-rows: 220px 49px;
+    grid-template-rows: 232px 49px;
     grid-template-columns: 1fr 200px;
   }
   .page > header {
@@ -2791,5 +2945,48 @@ textarea {
   .cuotas-producto {
     text-align: center;
     font-family: "menus";
+  }
+  /* SECCION FUNDAS NOTEBOOKS */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .funda-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+    font-size: 20px;
+  }
+  .page {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main main"
+      "foot foot";
+    grid-template-rows: 270px 60px;
+    grid-template-columns: 100px;
+  }
+
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
   }
 }
