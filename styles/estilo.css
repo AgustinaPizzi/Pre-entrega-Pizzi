@@ -1747,8 +1747,12 @@ textarea {
 }
 /* -----------MOBILE------------ */
 @media only screen and (max-width: 420px) {
-  /* /MENU INDEX/ */
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
+  /* /MENU INDEX/ */
   header {
     height: 100%;
     width: 100%;
@@ -1879,7 +1883,6 @@ textarea {
     letter-spacing: 4px;
     font-weight: bold;
   }
-
   .modelo1,
   .modelo2,
   .modelo3,
@@ -2002,7 +2005,6 @@ textarea {
     width: 180px;
     display: inline-block;
   }
-
   .menufinal li a:hover {
     background-color: #fee7f0;
   }
@@ -2292,7 +2294,7 @@ textarea {
     font-family: "letramarca";
     font-size: 20px;
   }
-  #page {
+  .page {
     display: grid;
     width: 100%;
 
@@ -2305,7 +2307,7 @@ textarea {
     grid-template-columns: 1fr 100px;
   }
 
-  #page > header {
+  .page > header {
     grid-area: head;
     background-color: #f8c7da;
   }
@@ -2327,7 +2329,7 @@ textarea {
     background-color: #ea94ccf9;
     text-align: center;
   }
-  #page > nav {
+  .page > nav {
     grid-area: nav;
     background-color: #ecf1fb;
   }
@@ -2345,7 +2347,7 @@ textarea {
     font-style: oblique;
   }
 
-  #page > main {
+  .page > main {
     grid-area: main;
     display: flex;
     background-color: #fffffb;
@@ -2394,7 +2396,7 @@ textarea {
   }
 
   /* MOCHILAS */
-  #page {
+  .page {
     display: grid;
     width: 100%;
     grid-template-areas:
@@ -2405,7 +2407,7 @@ textarea {
     grid-template-rows: 220px 49px;
     grid-template-columns: 1fr 200px;
   }
-  #page > header {
+  .page > header {
     grid-area: head;
     background-color: #f8c7da;
   }
@@ -2427,7 +2429,7 @@ textarea {
     background-color: #ea94ccf9;
     text-align: center;
   }
-  #page > nav {
+  .page > nav {
     grid-area: nav;
     height: 67px;
     background-color: #f1e4f3;
@@ -2439,7 +2441,7 @@ textarea {
     letter-spacing: normal;
   }
 
-  #page > main {
+  .page > main {
     grid-area: main;
     display: flex;
     background-color: #fffffb;
