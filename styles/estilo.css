@@ -9,24 +9,24 @@
 /* FUENTES */
 @font-face {
   font-family: "letramarca";
-  src: url(/fuenteprima.ttf);
+  src: url(/fonts/fuenteprima.ttf);
 }
 
 @font-face {
   font-family: "titulo2";
-  src: url(/titulo2.ttf);
+  src: url(/fonts/titulo2.ttf);
 }
 @font-face {
   font-family: "letratitulos";
-  src: url(/fuentetitulos.ttf);
+  src: url(/fonts/fuentetitulos.ttf);
 }
 @font-face {
   font-family: "menus";
-  src: url(/menus.ttf);
+  src: url(/fonts/menus.ttf);
 }
 
 header {
-  height: 300px;
+  height: 100%;
   width: 100%;
   background-color: #f8c7da;
 }
@@ -483,7 +483,7 @@ textarea {
 /* SECCION CONOCEME */
 
 .headpages-1 {
-  height: 272px;
+  height: 282px;
   width: 100%;
 }
 .quiensoy {
@@ -875,7 +875,7 @@ textarea {
   font-family: "menus";
 }
 
-/* ----------------NECESERES------------- */
+/* NECESERES*/
 
 .menupages {
   position: absolute;
@@ -949,7 +949,7 @@ textarea {
   text-align: center;
   font-family: "menus";
 }
-/* --------------BOLSOS------------- */
+/* BOLSOS */
 
 .menupages {
   position: absolute;
@@ -1415,12 +1415,21 @@ textarea {
   .disenio {
     display: flex;
   }
+  .row {
+    display: grid;
+    grid-template-columns: 202px 232px 235px 230px;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+  }
 
   .modelo1,
   .modelo2,
   .modelo4,
   .modelo5 {
     display: grid;
+  }
+  .modelo1 {
+    margin-left: -30px;
   }
 
   .descripcion {
@@ -1736,12 +1745,12 @@ textarea {
     width: 100%;
   }
 }
-
-@media only screen and (max-width: 480px) {
+/* -----------MOBILE------------ */
+@media only screen and (max-width: 420px) {
   /* /MENU INDEX/ */
 
   header {
-    height: 250px;
+    height: 100%;
     width: 100%;
     background-color: #f8c7da;
   }
@@ -1750,6 +1759,12 @@ textarea {
     background-color: #93051889;
     font-size: 12px;
   }
+  .nav-item-icono {
+    background-color: #f8c7da;
+    height: 50px;
+    width: 50px;
+  }
+
   /* TITULO DE LA MARCA */
 
   h1 {
@@ -1768,6 +1783,7 @@ textarea {
     text-align: center;
     font-size: 15px;
   }
+
   .descuentos {
     width: 100%;
     height: 300px;
@@ -1789,7 +1805,7 @@ textarea {
     text-decoration: none;
     padding: 8px;
     display: block;
-    font-family: "menus" !important;
+    font-family: "menus";
     font-weight: bolder;
     font-size: 14px;
     font-weight: 400;
@@ -1799,44 +1815,42 @@ textarea {
     text-align: center;
   }
   /* SECCION 1 */
-
   .contenedoruno {
-    height: 1120px;
+    height: 100%;
     width: 100%;
     background-color: #fefcfd;
   }
   .caja1 {
     display: flex;
     width: 100%;
-    height: 460px;
+    height: 400px;
     background-color: #ffffff;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-around;
   }
   .perfil {
-    height: 370px;
-    width: 300px;
-    padding: 10px;
+    height: 330px;
+    width: 280px;
+    margin-right: -2px;
   }
   a {
     font-family: "fuentetitulos";
     font-style: normal;
     text-decoration: none;
-    padding: 20px;
   }
   .presentacion {
-    height: 560px;
-    padding: 40px;
+    height: 100%;
     font-size: 20px;
     font-family: "menus";
     background-color: rgb(255, 255, 255);
-    font-size: 23px;
   }
   .hola {
     border-right: none;
-    height: 125px;
+    text-align: center;
+    height: 215px;
     font-size: 30px;
+    width: 260px;
   }
   .imgcaja2 {
     display: none;
@@ -1848,9 +1862,11 @@ textarea {
   /* SECCION2 */
 
   .seccion2 {
-    height: 2200px;
+    background-color: #f9e1ef;
+    height: 100%;
     width: 100%;
-    margin-top: 375px;
+    padding: 2px;
+    margin-top: 530px;
   }
   .disenio {
     display: flex;
@@ -1858,34 +1874,39 @@ textarea {
     justify-content: start;
     text-align: center;
     padding: 30px;
-    font-size: 40px;
+    font-size: 30px;
     font-family: "menus";
     letter-spacing: 4px;
     font-weight: bold;
   }
+
   .modelo1,
   .modelo2,
   .modelo3,
   .modelo4,
   .modelo5 {
-    padding: 11px 90px;
+    margin-left: 100px;
   }
   .img1,
   .img2,
   .img3,
   .img4,
   .img5 {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
   }
   .seccion-2 {
     display: inline-flex;
     flex-direction: column;
-    width: 300px;
     align-items: stretch;
-    padding: 20px;
+    height: 155px;
+    width: 215px;
+    margin-top: -85px;
   }
   .descripcion {
+    text-align: center;
+    font-family: "menus";
+    font-weight: bold;
     font-size: 18px;
     padding: 2px 2px;
   }
@@ -1894,7 +1915,12 @@ textarea {
     font-family: "menus";
   }
   .precio {
-    font-size: 18px;
+    text-align: center;
+    font-family: "menus";
+    margin-top: 5px;
+    color: #100000;
+    font-weight: bold;
+    font-size: 16px;
   }
   .row {
     display: flex;
@@ -1906,41 +1932,54 @@ textarea {
   .seccion3 {
     background-color: #e2dde0;
     width: 100%;
+    height: 100%;
   }
+
   .titulo {
+    text-align: center;
+    font-family: "menus";
+    text-decoration: overline;
+    letter-spacing: 1px;
     font-size: 30px;
     font-weight: bold;
-    padding: 10px 20px;
   }
+
   .contenedorimg {
     display: grid;
-    width: 100%;
-    grid-auto-rows: 375px;
-    height: 1500px;
-    margin-top: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 265px;
+    height: 1059px;
+    padding: 14px 94px;
+    justify-items: end;
+    margin-top: 24px;
+    align-items: center;
+    align-content: center;
   }
+
   .imgA,
   .imgB,
   .imgC,
   .imgD {
-    width: 260px;
-    height: 300px;
-    margin-left: 90px;
+    display: flex;
+    width: 210px;
+    height: 230px;
+    margin-right: 90px;
   }
 
   /* FOOTER */
   .footerindex {
-    height: 885px;
+    height: 540px;
     background-color: #f9bed5;
     width: 100%;
   }
   .formulario {
-    padding: 30px;
+    padding: 0px;
     margin: 0px;
   }
   .formulario p {
     color: #800f2f;
     font-weight: bold;
+    padding: 30px;
   }
   input[type="submit" i] {
     background-color: #f3225d84;
@@ -1949,260 +1988,96 @@ textarea {
     font-weight: bold;
   }
   textarea {
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: 70px;
   }
   .mf {
     list-style: none;
-    padding: 60px;
+    padding: 35px;
     margin: 0;
     text-align: center;
     overflow: auto;
   }
-  .menumedia {
-    display: flex;
-    justify-content: center;
-    width: 440px;
+  .menufinal li {
+    width: 180px;
+    display: inline-block;
   }
 
-  /* UBICACION */
-
+  .menufinal li a:hover {
+    background-color: #fee7f0;
+  }
+  .copy,
+  .copy2 {
+    text-align: center;
+    font-size: 10px;
+  }
+  /* INDEX CUIDADOS */
+  .navbar navbar-expand-lg bg-body-tertiary {
+    margin-bottom: 20px;
+  }
   .headpages {
+    height: 250px;
     width: 100%;
   }
-  .pagemapa > nav {
-    grid-area: nav;
-    height: 700px;
-    background-color: #f1e4f3;
-  }
-  .pagemapa > header {
-    grid-area: head;
-    height: 235px;
-    background-color: #f8c7da;
-  }
-  .mapagoogle {
-    width: 600px;
-    height: 550px;
-    padding: 45px 30px;
-  }
-  .ubicacion-titulo {
-    font-family: "menu";
-    font-size: 35px;
-    text-align: center;
-  }
-  .mapagoogle {
-    width: 490px;
-    height: 500px;
-  }
-  .textoubi {
-    display: none;
-  }
-  .buscar {
-    display: none;
-  }
-  .retiro {
-    display: none;
-  }
-  .tx-responsive {
-    display: flex;
-    font-size: 20px;
-    background-color: #f893d6;
-    width: 356px;
-    height: 150px;
-    margin-left: 75px;
-    padding: 20px;
-    border-style: double;
-  }
-  .tx-r {
-    display: inline;
-    text-align: center;
-    font-family: "menus";
-  }
-  .footer-ubi {
-    background-color: #f8c7da;
-    height: 840px;
-  }
 
-  /* SECCION CONOCEME */
-
-  .quiensoy {
-    height: 2500px;
-    width: 100%;
-    background-color: #fae9f0;
-  }
-  .presentacion-titulo {
+  .cuidado-titulo {
     font-family: "menu";
-    font-size: 40px;
     letter-spacing: normal;
-    padding: 10px;
-  }
-  .pagequiensoy > nav {
-    grid-area: nav;
-    height: 50px;
-    background-color: #f1e4f3;
+    font-weight: lighter;
   }
   .dropdown-menu ul li a {
     font-weight: bold;
   }
-
-  .pagequiensoy > header {
-    grid-area: head;
-    height: 320px;
-    background-color: #f8c7da;
-  }
-  .contenedor1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .yo {
-    width: 300px;
-    height: 350px;
-    padding: 20px;
-  }
-  .texto1 {
-    width: 798px;
-    height: 790px;
-    margin-left: 30px;
-    margin-top: 20px;
-    font-size: 20px;
-    border-left: 3px solid;
-    padding-left: 23px;
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
     font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
   }
-  .contenedor2 {
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  .cuadricula {
     display: flex;
+    align-items: start;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    margin-top: -420px;
-  }
-  .emprender {
-    display: inline-flex;
-    width: 345px;
-    margin-top: -995px;
-    height: 345px;
-    border: none;
-    border: 2px solid;
-    margin-left: 69px;
   }
 
-  .text2 {
-    width: 800px;
-    height: 600px;
-    font-family: "menus";
-    font-size: 19px;
-    margin-right: 20px;
-    padding-left: 15px;
-    border: none;
-    margin-top: 835px;
-  }
-  .footer-soy {
-    height: 830px;
-  }
-
-  /* INDEX CUIDADOS */
-  .cuidado-titulo {
-    font-size: 45px;
-  }
-  .page-cuidado {
-    display: grid;
-    width: 100%;
-  }
-  
-  .page-cuidado {
-    display: grid;
-    width: 100%;
-  
-    grid-template-areas:
-      "head head"
-      "nav nav"
-      "main  main"
-      "foot foot";
-  }
-  .page-cuidado > header {
-    grid-area: head;
-    height: 100%;
-    background-color: #f8c7da;
-  }
-  .page-cuidado > nav {
-    grid-area: nav;
-    background-color: #ecf1fb;
-  }
-  .page-cuidado > main {
-    grid-area: main;
-    display: flex;
-    background-color: #fffffb;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .row2 {
-    display: grid;
-    grid-template-columns: 410px 410px 410px;
-    grid-template-rows: 1fr;
-    row-gap: 49px;
-    column-gap: 49px;
-    padding: 15px;
-  }
-  .col-cuidado {
-    display: flex;
-    padding: 10px;
-  }
-  
   .item1 {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 3px;
-    border: 1px solid #0f0000;
+    padding: 2px;
     border-radius: 10px;
     text-align: center;
-    background-color: #f5ebe0;
   }
   .item2 {
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    border: 1px solid #0b0101;
+    padding: 5px;
     border-radius: 10px;
     text-align: center;
-    background-color: #f5ebe0;
-    justify-self: center;
   }
   .item3 {
-    display: flex;
-    flex-direction: column;
     padding: 5px;
-    border: 1px solid #000000;
     border-radius: 10px;
     text-align: center;
-    background-color: #f5ebe0;
   }
   .item4 {
-    display: flex;
-    flex-direction: column;
     padding: 5px;
-    border: 1px solid #000000;
     border-radius: 10px;
     text-align: center;
-    background-color: #f5ebe0;
   }
   .item5 {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border: 1px solid #000000;
+    padding: 5px;
     border-radius: 10px;
     text-align: center;
-    background-color: #f5ebe0;
   }
   .item6 {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border: 1px solid #000000;
+    padding: 5px;
     border-radius: 10px;
     text-align: center;
-    background-color: #f5ebe0;
   }
   .txgrid {
     font-size: 18px;
@@ -2215,9 +2090,704 @@ textarea {
     font-weight: bold;
     font-family: "fuentetitulos";
   }
-  .page-cuidado > footer {
+
+  /* SECCION CONOCEME */
+
+  .quiensoy2 {
+    height: 100%;
+    width: 100%;
+    background-color: #fae9f0;
+  }
+  .presentacion-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+    padding: 10px;
+  }
+  .pagequiensoy > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  .pagequiensoy > header {
+    grid-area: head;
+    height: 100%;
+    background-color: #f8c7da;
+  }
+  .contenedor1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .yo {
+    width: 300px;
+    height: 350px;
+    margin-top: 20px;
+  }
+  .texto1 {
+    width: 100%;
+    margin-right: 30px;
+    margin-top: 33px;
+    font-size: 20px;
+    border-left: none;
+    font-family: "menus";
+    height: 1070px;
+  }
+  .contenedor2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    height: 1100px;
+  }
+  .emprender {
+    display: none;
+  }
+
+  .text2 {
+    width: 800px;
+    height: 600px;
+    font-family: "menus";
+    font-size: 19px;
+    margin-right: 50px;
+    border: none;
+    margin-bottom: 60px;
+  }
+  .footerpages {
+    height: 550px;
+  }
+
+  /* SECCION PROCESO CREATIVO */
+  .page-proceso {
+    height: 100%;
+    width: 100%;
+  }
+  .proceso {
+    width: 100%;
+    height: 1000px;
+    background-image: url("../img/fondorosa.jpeg");
+  }
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  .proceso-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  #footer {
+    height: 100%;
+  }
+  .formulario {
+    font-size: 20px;
+    text-align: center;
+    color: rgba(248, 167, 167, 0.8);
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+  }
+  /* UBICACION */
+
+  .headpages-ubicacion {
+    height: 100%;
+    width: 100%;
+  }
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  .mapa {
+    width: 100%;
+    height: 600px;
+    background-color: #ffffff;
+  }
+
+  .ubicacion-titulo {
+    font-family: "menu";
+    font-size: 45px;
+    letter-spacing: normal;
+  }
+  .mapagoogle {
+    width: 415px;
+    height: 350px;
+    padding: 17px 27px;
+    margin-top: 50px;
+  }
+
+  .textoubi {
+    display: none;
+  }
+  .buscar {
+    display: none;
+  }
+  .retiro {
+    display: none;
+  }
+  .tx-responsive {
+    display: flex;
+    background-color: #f893d6;
+    width: 300px;
+    height: 130px;
+    margin-left: 65px;
+    padding: 20px;
+    border-style: double;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .tx-r {
+    display: inline;
+    text-align: center;
+    font-family: "menus";
+  }
+
+  /* SECCION BANDOLERA */
+  .piuma {
+    text-align: center;
+    font-family: "letramarca";
+    font-size: 20px;
+  }
+  #page {
+    display: grid;
+    width: 100%;
+
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main  main"
+      "foot foot";
+    grid-template-rows: 180px 30px;
+    grid-template-columns: 1fr 100px;
+  }
+
+  #page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  #page > nav {
+    grid-area: nav;
+    background-color: #ecf1fb;
+  }
+
+  .bandolera-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  .subtitulo-titulos {
+    font-family: "fuentetitulos";
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-style: oblique;
+  }
+
+  #page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .container_bandolera {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .b1 {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 40px 60px;
+    border-radius: 15%;
+  }
+
+  .nombre-bandolera {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "menus";
+    padding: 10px;
+  }
+  .precio-bandolera {
+    text-align: center;
+    font-size: 18px;
+    font-family: "menus";
+    padding: 8px;
+  }
+  .cuotasbandoleras {
+    text-align: center;
+    font-family: "menus";
+  }
+  #page > footer {
     grid-area: foot;
     background-color: #f9bed5;
   }
+
+  .footerpages {
+    height: 100%;
+    background-color: #f9bed5;
+  }
+
+  /* MOCHILAS */
+  #page {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main main"
+      "foot foot";
+    grid-template-rows: 220px 49px;
+    grid-template-columns: 1fr 200px;
+  }
+  #page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  #page > nav {
+    grid-area: nav;
+    height: 67px;
+    background-color: #f1e4f3;
+  }
+
+  .mochila-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  #page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .container_mochila {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .m1 {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 40px 60px;
+  }
+
+  .nombre-mochila {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "menus";
+    padding: 10px;
+  }
+  .precio-mochila {
+    text-align: center;
+    font-size: 18px;
+    font-family: "menus";
+    padding: 8px;
+  }
+  .cuotasmochilas {
+    text-align: center;
+    font-family: "menus";
+  }
+
+  #page > footer {
+    height: 515px;
+    grid-area: foot;
+    background-color: #f9bed5;
+  }
+  .logo {
+    display: flex;
+    border-radius: 60%;
+    border: 1px solid;
+  }
+  .footerpages {
+    height: 100%;
+    width: 100%;
+    background-color: #f9bed5;
+  }
+
+  /* SECCION RIÑONERA */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .rinionera-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .page > header {
+    grid-area: head;
+    height: 100%;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .footerpages {
+    height: 100%;
+    width: 100%;
+    background-color: #f9bed5;
+  }
+  /* NECESERES*/
+
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .neceseres-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .page > header {
+    grid-area: head;
+    height: 100%;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  .nombre-neceser {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "menus";
+  }
+  .precio-neceser {
+    text-align: center;
+    font-size: 16px;
+    font-family: "menus";
+    padding: 8px;
+  }
+  .cuotasneceser {
+    text-align: center;
+    font-family: "menus";
+  }
+  .footerpages {
+    height: 600px;
+    width: 100%;
+    background-color: #f9bed5;
+  }
+
+  /* BOLSOS */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .bolsos-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  /* SECCION BILLETERAS */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .billetera-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .bi {
+    display: flex;
+    width: 415px;
+    height: 400px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  /* SECCION COMPLEMENTOS */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .complementos-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .c {
+    display: flex;
+    width: 415px;
+    height: 400px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  /* BOLSOS MATEROS */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .mate-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .bm {
+    display: flex;
+    width: 415px;
+    height: 400px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  /* SOBRES */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .sobres-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .s {
+    display: flex;
+    width: 420px;
+    height: 380px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  .nombre-producto {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "menus";
+  }
+  .precio-producto {
+    text-align: center;
+    font-size: 18px;
+    font-family: "menus";
+    padding: 8px;
+  }
+  .cuotas-producto {
+    text-align: center;
+    font-family: "menus";
   }
 }
