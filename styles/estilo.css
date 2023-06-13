@@ -5,7 +5,6 @@
   text-decoration: none;
   list-style: none;
 }
-
 /* FUENTES */
 @font-face {
   font-family: "letramarca";
@@ -57,7 +56,7 @@ h1 {
   text-align: center;
   font-size: 20px;
 }
-/* ------Iconos menu----- */
+/*Iconos menu */
 .iconos {
   display: flex;
   flex-direction: column;
@@ -70,7 +69,7 @@ h1 {
   background-color: #ff85e9f9;
 }
 
-/* ----------MENUPPAL----------- */
+/* -MENUPPAL- */
 
 .nav-item li a {
   background-color: #f6f6f6 !important;
@@ -161,7 +160,6 @@ h1 {
 }
 
 /* SECCION2 */
-
 .seccion2 {
   display: grid;
   background-color: #f9e1ef;
@@ -194,7 +192,6 @@ h1 {
   grid-template-columns: 235px;
   grid-template-rows: 300px;
 }
-
 .img1,
 .img2,
 .img4,
@@ -204,7 +201,6 @@ h1 {
   border-radius: 5px;
   border: 1px solid;
 }
-
 .descripcion {
   text-align: center;
   font-family: "menus";
@@ -234,7 +230,6 @@ h1 {
   width: 100%;
   height: 600px;
 }
-
 .titulo {
   text-align: center;
   font-family: "menus";
@@ -244,13 +239,11 @@ h1 {
   font-weight: bold;
   padding: 10px 20px;
 }
-
 .contenedorimg {
   display: flex;
   margin-top: 60px;
   justify-content: center;
 }
-
 .imgA {
   margin-right: 50px;
   height: 350px;
@@ -262,7 +255,6 @@ h1 {
   opacity: 0.5;
   transform: scale(1.1);
 }
-
 .imgB {
   margin-right: 50px;
   height: 350px;
@@ -275,7 +267,6 @@ h1 {
   opacity: 0.5;
   transform: scale(1.1);
 }
-
 .imgC {
   margin-right: 50px;
   height: 350px;
@@ -359,9 +350,7 @@ textarea {
   width: 60px;
   display: inline-block;
 }
-
 /* INDEX CUIDADOS */
-
 .cuidado-titulo {
   font-size: 45px;
 }
@@ -481,7 +470,6 @@ textarea {
 }
 
 /* SECCION CONOCEME */
-
 .headpages-1 {
   height: 282px;
   width: 100%;
@@ -499,7 +487,6 @@ textarea {
   font-family: "menus";
   font-size: 14px;
 }
-
 .dropdown-menu a:hover {
   background-color: #ea94ccf9;
   text-align: center;
@@ -510,7 +497,6 @@ textarea {
   letter-spacing: normal;
   padding: 20px;
 }
-
 .contenedor1 {
   display: flex;
   background-color: #fadfeb;
@@ -529,7 +515,6 @@ textarea {
   padding-left: 23px;
   font-family: "menus";
 }
-
 .contenedor2 {
   display: flex;
   flex-wrap: nowrap;
@@ -555,7 +540,6 @@ textarea {
 }
 
 /* SECCION PROCESO CREATIVO */
-
 .proceso {
   width: 100%;
   height: 1000px;
@@ -631,7 +615,6 @@ textarea {
 .tx-r {
   display: none;
 }
-
 /* SECCION BANDOLERA */
 .piuma {
   text-align: center;
@@ -681,7 +664,6 @@ textarea {
   padding: 20px;
   font-style: oblique;
 }
-
 .container_bandolera {
   display: flex;
   flex-wrap: wrap;
@@ -732,12 +714,10 @@ textarea {
   grid-template-rows: 165px 50px;
   grid-template-columns: 1fr 100px;
 }
-
 .page > header {
   grid-area: head;
   background-color: #f8c7da;
 }
-
 .page > nav {
   grid-area: nav;
   height: 65px;
@@ -747,13 +727,11 @@ textarea {
   position: absolute;
   margin-left: 310px;
 }
-
 .mochila-titulo {
   font-family: "menu";
   font-size: 50px;
   letter-spacing: normal;
 }
-
 .page > main {
   grid-area: main;
   display: flex;
@@ -774,7 +752,6 @@ textarea {
   padding: 40px 50px;
   border-radius: 15%;
 }
-
 .nombre-mochila {
   font-size: 20px;
   font-weight: bold;
@@ -806,13 +783,11 @@ textarea {
   position: absolute;
   margin-left: 310px;
 }
-
 .rinionera-titulo {
   font-family: "menu";
   font-size: 50px;
   letter-spacing: normal;
 }
-
 .subtitulo-titulos {
   padding: 0px;
 }
@@ -857,7 +832,6 @@ textarea {
   display: flex;
   background-color: #fffffb;
 }
-
 .nombre-rinionera {
   font-size: 20px;
   font-weight: bold;
@@ -876,18 +850,15 @@ textarea {
 }
 
 /* NECESERES*/
-
 .menupages {
   position: absolute;
   margin-left: 310px;
 }
-
 .neceseres-titulo {
   font-family: "menu";
   font-size: 50px;
   letter-spacing: normal;
 }
-
 .subtitulo-titulos {
   padding: 0px;
 }
@@ -921,7 +892,6 @@ textarea {
   grid-area: head;
   background-color: #f8c7da;
 }
-
 .page > nav {
   grid-area: nav;
   height: 65px;
@@ -932,7 +902,6 @@ textarea {
   display: flex;
   background-color: #fffffb;
 }
-
 .nombre-neceser {
   font-size: 20px;
   font-weight: bold;
@@ -950,18 +919,15 @@ textarea {
   font-family: "menus";
 }
 /* BOLSOS */
-
 .menupages {
   position: absolute;
   margin-left: 310px;
 }
-
 .bolsos-titulo {
   font-family: "menu";
   font-size: 50px;
   letter-spacing: normal;
 }
-
 .subtitulo-titulos {
   padding: 0px;
 }
@@ -995,7 +961,6 @@ textarea {
   grid-area: head;
   background-color: #f8c7da;
 }
-
 .page > nav {
   grid-area: nav;
   height: 65px;
@@ -1006,7 +971,6 @@ textarea {
   display: flex;
   background-color: #fffffb;
 }
-
 .nombre-bolso {
   font-size: 20px;
   font-weight: bold;
@@ -1035,7 +999,6 @@ textarea {
   font-size: 50px;
   letter-spacing: normal;
 }
-
 .subtitulo-titulos {
   padding: 0px;
 }
@@ -1069,7 +1032,6 @@ textarea {
   grid-area: head;
   background-color: #f8c7da;
 }
-
 .page > nav {
   grid-area: nav;
   height: 65px;
@@ -1080,7 +1042,6 @@ textarea {
   display: flex;
   background-color: #fffffb;
 }
-
 .nombre-producto {
   font-size: 20px;
   font-weight: bold;
@@ -1102,13 +1063,11 @@ textarea {
   position: absolute;
   margin-left: 310px;
 }
-
 .complementos-titulo {
   font-family: "menu";
   font-size: 50px;
   letter-spacing: normal;
 }
-
 .subtitulo-titulos {
   padding: 0px;
 }
@@ -1142,7 +1101,6 @@ textarea {
   grid-area: head;
   background-color: #f8c7da;
 }
-
 .page > nav {
   grid-area: nav;
   height: 65px;
@@ -1153,7 +1111,6 @@ textarea {
   display: flex;
   background-color: #fffffb;
 }
-
 .nombre-producto {
   font-size: 20px;
   font-weight: bold;
@@ -1175,13 +1132,11 @@ textarea {
   position: absolute;
   margin-left: 310px;
 }
-
 .mate-titulo {
   font-family: "menu";
   font-size: 50px;
   letter-spacing: normal;
 }
-
 .subtitulo-titulos {
   padding: 0px;
 }
@@ -1215,7 +1170,6 @@ textarea {
   grid-area: head;
   background-color: #f8c7da;
 }
-
 .page > nav {
   grid-area: nav;
   height: 65px;
@@ -1226,7 +1180,6 @@ textarea {
   display: flex;
   background-color: #fffffb;
 }
-
 .nombre-producto {
   font-size: 20px;
   font-weight: bold;
@@ -1243,19 +1196,16 @@ textarea {
   text-align: center;
   font-family: "menus";
 }
-
 /* SOBRES */
 .menupages {
   position: absolute;
   margin-left: 310px;
 }
-
 .sobres-titulo {
   font-family: "menu";
   font-size: 50px;
   letter-spacing: normal;
 }
-
 .subtitulo-titulos {
   padding: 0px;
 }
@@ -1290,7 +1240,6 @@ textarea {
   grid-area: head;
   background-color: #f8c7da;
 }
-
 .page > nav {
   grid-area: nav;
   height: 65px;
@@ -1301,7 +1250,6 @@ textarea {
   display: flex;
   background-color: #fffffb;
 }
-
 .nombre-producto {
   font-size: 20px;
   font-weight: bold;
@@ -1323,13 +1271,11 @@ textarea {
   position: absolute;
   margin-left: 310px;
 }
-
 .funda-titulo {
   font-family: "menu";
   font-size: 50px;
   letter-spacing: normal;
 }
-
 .subtitulo-titulos {
   padding: 0px;
   font-size: 25px;
@@ -1364,7 +1310,6 @@ textarea {
   grid-area: head;
   background-color: #f8c7da;
 }
-
 .page > nav {
   grid-area: nav;
   height: 100%;
@@ -1375,7 +1320,6 @@ textarea {
   display: flex;
   background-color: #fffffb;
 }
-
 .nombre-producto {
   font-size: 20px;
   font-weight: bold;
@@ -1397,7 +1341,6 @@ textarea {
   position: absolute;
   margin-left: 310px;
 }
-
 .cartera-titulo {
   font-family: "menu";
   font-size: 50px;
@@ -1573,7 +1516,6 @@ textarea {
     grid-template-rows: 1fr;
     row-gap: 20px;
   }
-
   .modelo1,
   .modelo2,
   .modelo4,
@@ -1583,7 +1525,6 @@ textarea {
   .modelo1 {
     margin-left: -30px;
   }
-
   .descripcion {
     text-align: center;
     font-family: "menus";
