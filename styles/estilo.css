@@ -8,20 +8,20 @@
 /* FUENTES */
 @font-face {
   font-family: "letramarca";
-  src: url(/fonts/fuenteprima.ttf);
+  src: url(/fonts/mellony_dry_brush.ttf);
 }
 
 @font-face {
   font-family: "titulo2";
-  src: url(/fonts/titulo2.ttf);
+  src: url(/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: "letratitulos";
-  src: url(/fonts/fuentetitulos.ttf);
+  src: url(/fonts/NotoSerif-Italic-VariableFont_wdth\,wght.ttf);
 }
 @font-face {
   font-family: "menus";
-  src: url(/fonts/menus.ttf);
+  src: url(/fonts/Questrial-Regular.ttf);
 }
 
 header {
