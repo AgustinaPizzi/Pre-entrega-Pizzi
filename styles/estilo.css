@@ -5,23 +5,29 @@
   text-decoration: none;
   list-style: none;
 }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 60%;
+  margin: auto;
+}
 /* FUENTES */
 @font-face {
   font-family: "letramarca";
-  src: url(/fonts/mellony_dry_brush.ttf);
+  src: url(./../fonts/letramarca.ttf);
 }
 
 @font-face {
   font-family: "titulo2";
-  src: url(/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+  src: url(./../fonts/letratitulo2.ttf);
 }
 @font-face {
   font-family: "letratitulos";
-  src: url(/fonts/NotoSerif-Italic-VariableFont_wdth\,wght.ttf);
+  src: url(./../fonts/titulos.ttf);
 }
 @font-face {
   font-family: "menus";
-  src: url(/fonts/Questrial-Regular.ttf);
+  src: url(./../fonts/menus.ttf);
 }
 
 header {
@@ -86,7 +92,7 @@ h1 {
 }
 
 .cuidado-titulo {
-  font-family: "menu";
+  font-family: "menus";
   letter-spacing: normal;
   font-weight: lighter;
 }
@@ -113,7 +119,7 @@ h1 {
 
 /* SECCION 1 */
 .contenedoruno {
-  height: 550px;
+  height: 485px;
   width: 100%;
   background-color: #f3f3f3;
 }
@@ -121,12 +127,12 @@ h1 {
 .caja1 {
   display: flex;
   width: 1050px;
-  height: 580px;
+  height: 540px;
   align-items: center;
   flex-wrap: nowrap;
 }
 .perfil {
-  height: 370px;
+  height: 420px;
   padding: 10px;
   margin-right: 40px;
 }
@@ -141,24 +147,18 @@ h1 {
   font-size: 30px;
   padding: 10px;
 }
-.imgcaja2 {
-  height: 450px;
-  width: 430px;
-  margin-left: 10px;
-  margin-top: -490px;
-}
-.caja2 {
-  box-sizing: border-box;
-  border: 1px solid white;
-  border-radius: 17px;
-  cursor: pointer;
-  display: flex;
-  justify-content: right;
-  user-select: none;
-  font-weight: bolder;
-  flex-direction: row-reverse;
-}
 
+.caja2 {
+  display: flex;
+  justify-content: left;
+  margin-left: 1080px;
+  margin-top: -460px;
+}
+.videoinicio {
+  display: flex;
+  width: 600px;
+  border-color: 3px solid;
+}
 /* SECCION2 */
 .seccion2 {
   display: grid;
@@ -353,6 +353,7 @@ textarea {
 /* INDEX CUIDADOS */
 .cuidado-titulo {
   font-size: 45px;
+  font-family: "letratitulo2";
 }
 .page-cuidado {
   display: grid;
@@ -462,7 +463,7 @@ textarea {
   padding: 10px;
   font-size: 25px;
   font-weight: bold;
-  font-family: "fuentetitulos";
+  font-family: "menus";
 }
 .page-cuidado > footer {
   grid-area: foot;
@@ -542,13 +543,47 @@ textarea {
 /* SECCION PROCESO CREATIVO */
 .proceso {
   width: 100%;
-  height: 1000px;
-  background-image: url("../img/fondorosa.jpeg");
+  height: 850px;
+  background-image: url("/img/fondo.jpeg");
+}
+.headpages-proceso {
+  height: 100%;
+  width: 100%;
+  background-color: #f8c7da;
 }
 .proceso-titulo {
   font-family: "menu";
-  font-size: 40px;
+  font-size: 45px;
   letter-spacing: normal;
+}
+.video {
+  display: flex;
+  background-color: #ffffff;
+  width: 600px;
+  height: 688px;
+  margin-top: 40px;
+  padding: 20px;
+  justify-content: space-around;
+}
+.titulopasos {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  background-color: #f893e6c7;
+}
+.texto-proceso {
+  display: flex;
+  width: 800px;
+  height: 820px;
+  margin-top: -670px;
+  margin-left: 600px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  font-weight: "menus";
+}
+.paso {
+  background-color: #f9bed5;
 }
 .footer {
   height: 210px;
@@ -561,6 +596,39 @@ textarea {
   color: rgba(248, 167, 167, 0.8);
   font-family: "Poppins", sans-serif;
   letter-spacing: 3px;
+}
+/* BENEFICIOS */
+.page-beneficio {
+  background-image: url("/img/fondo.jpeg");
+}
+.beneficios-titulo {
+  font-size: 45px;
+  letter-spacing: normal;
+  font-family: "letratitulo2";
+}
+.videobeneficios {
+  display: flex;
+  height: 1001px;
+  padding: 245px;
+  margin-left: -35px;
+  margin-top: -168px;
+  align-items: stretch;
+}
+
+.beneficios-tx {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  width: 653px;
+  height: 490px;
+  margin-left: 620px;
+  margin-top: -715px;
+  align-items: stretch;
+  font-family: "menus";
+  font-size: 20px;
+}
+.footer {
+  height: 210px;
 }
 
 /* UBICACION */
@@ -1837,6 +1905,98 @@ textarea {
     background-color: #f9bed5;
     width: 100%;
   }
+  /* BENEFICIOS */
+  .beneficios-titulo {
+    font-size: 40px;
+    letter-spacing: normal;
+    font-family: "letratitulo2";
+  }
+  .videobeneficio {
+    display: flex;
+    height: 600px;
+
+    padding: 20px;
+  }
+  .footer {
+    width: 100%;
+  }
+  /* SECCION PROCESO CREATIVO */
+  .proceso {
+    width: 100%;
+    height: 1235px;
+    background-color: #ffffff;
+  }
+  .headpages-proceso {
+    height: 100%;
+    width: 100%;
+    background-color: #f8c7da;
+  }
+  .proceso-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  .video {
+    display: flex;
+    background-color: #ffffff;
+    width: 520px;
+    height: 688px;
+    margin-top: 40px;
+    padding: 20px;
+    justify-content: space-around;
+  }
+  .titulopasos {
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    background-color: #f893e6c7;
+  }
+  .texto-proceso {
+    display: flex;
+    width: 380px;
+    margin-left: 550px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    font-weight: "menus";
+  }
+  .paso {
+    background-color: #f9bed5;
+  }
+  .footer {
+    height: 100%;
+    background-color: rgba(171, 76, 88, 0.8);
+  }
+  /* BENEFICIOS */
+  .page-beneficio {
+    background-image: url("/img/fondo.jpeg");
+  }
+  .beneficios-titulo {
+    font-size: 40px;
+    letter-spacing: normal;
+    font-family: "letratitulo2";
+  }
+  .videobeneficios {
+    display: flex;
+    height: 1010px;
+    padding: 235px;
+    margin-left: -140px;
+    margin-top: -192px;
+    align-items: stretch;
+  }
+
+  .beneficios-tx {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 492px;
+    height: 638px;
+    margin-left: 518px;
+    margin-top: -777px;
+    align-items: stretch;
+    font-family: "menus";
+    font-size: 20px;
+  }
 }
 /* -----------MOBILE------------ */
 @media only screen and (max-width: 420px) {
@@ -2185,7 +2345,82 @@ textarea {
     font-weight: bold;
     font-family: "fuentetitulos";
   }
+  /* BENEFICIOS */
+  .page-beneficio {
+    background-image: none;
+    background-color: #fee7f0;
+  }
+  .beneficios-titulo {
+    font-size: 40px;
+    letter-spacing: normal;
+    font-family: "letratitulo2";
+  }
+  .videobeneficios {
+    display: flex;
+    height: 1001px;
+    padding: 245px;
+    margin-left: -209px;
+    margin-top: -208px;
+    align-items: stretch;
+  }
 
+  .beneficios-tx {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 361px;
+    height: 877px;
+    margin-left: 39px;
+    margin-top: -220px;
+    align-items: stretch;
+    font-family: "menus";
+    font-size: 20px;
+  }
+  /* SECCION PROCESO CREATIVO */
+  .proceso {
+    width: 100%;
+    height: 1235px;
+    background-color: #ffffff;
+  }
+  .headpages-proceso {
+    height: 100%;
+    width: 100%;
+    background-color: #f8c7da;
+  }
+  .proceso-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  .video {
+    display: flex;
+    background-color: #ffffff;
+    width: 439px;
+    height: 468px;
+
+    padding: 20px;
+    justify-content: space-around;
+  }
+  .titulopasos {
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    background-color: #f893e6c7;
+  }
+  .texto-proceso {
+    display: flex;
+    width: 391px;
+    margin-left: 3px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .paso {
+    background-color: #f9bed5;
+  }
+  .footer {
+    height: 100%;
+    background-color: rgba(171, 76, 88, 0.8);
+  }
   /* SECCION CONOCEME */
 
   .quiensoy2 {
@@ -2195,7 +2430,7 @@ textarea {
   }
   .presentacion-titulo {
     font-family: "menu";
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: normal;
     padding: 10px;
   }
@@ -2253,6 +2488,16 @@ textarea {
     justify-content: flex-end;
     height: 1100px;
   }
+  .text2 {
+    width: 800px;
+    height: 600px;
+    font-family: "menus";
+    font-size: 19px;
+    margin-right: 20px;
+    border: none;
+    margin-bottom: 60px;
+  }
+
   .emprender {
     display: none;
   }
@@ -2270,49 +2515,6 @@ textarea {
     height: 550px;
   }
 
-  /* SECCION PROCESO CREATIVO */
-  .page-proceso {
-    height: 100%;
-    width: 100%;
-  }
-  .proceso {
-    width: 100%;
-    height: 1000px;
-    background-image: url("../img/fondorosa.jpeg");
-  }
-  .dropdown-menu ul li a {
-    font-weight: bold;
-  }
-  .nav-item li a {
-    background-color: #f6f6f6;
-    color: black;
-    text-decoration: none;
-    padding: 8px;
-    display: block;
-    font-family: "menus";
-    font-weight: bolder;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  .dropdown-menu a:hover {
-    background-color: #ea94ccf9;
-    text-align: center;
-  }
-  .proceso-titulo {
-    font-family: "menu";
-    font-size: 40px;
-    letter-spacing: normal;
-  }
-  #footer {
-    height: 100%;
-  }
-  .formulario {
-    font-size: 20px;
-    text-align: center;
-    color: rgba(248, 167, 167, 0.8);
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 3px;
-  }
   /* UBICACION */
 
   .headpages-ubicacion {
