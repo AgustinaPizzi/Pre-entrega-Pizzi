@@ -6,11 +6,6 @@
   list-style: none;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 60%;
-  margin: auto;
-}
 /* FUENTES */
 @font-face {
   font-family: "letramarca";
@@ -576,7 +571,6 @@ textarea {
   width: 800px;
   height: 820px;
   margin-top: -670px;
-  margin-left: 600px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
@@ -1503,8 +1497,9 @@ textarea {
   .descuentos {
     display: flex;
     height: 440px;
-    width: 100%;
-    margin-top: 30px;
+    width: 800px;
+    margin-top: 10px;
+    margin-left: 115px;
   }
   .imgdescuento {
     display: block;
@@ -1538,13 +1533,14 @@ textarea {
   }
   /* SECCION 1 */
   .contenedoruno {
-    height: 700px;
+    height: 750px;
     width: 100%;
     background-color: #fefcfd;
   }
   .caja1 {
-    width: 1000px;
-    background-color: #ffffff;
+    width: 100%;
+    height: 390px;
+    background-color: #ffe4f7f5;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-evenly;
@@ -1560,7 +1556,6 @@ textarea {
   }
   .hola {
     border: none;
-    background-color: #fcc3e7;
     font-size: 30px;
     padding: 30px 50px;
   }
@@ -2044,6 +2039,7 @@ textarea {
   .descuentos {
     width: 100%;
     height: 300px;
+    margin-left: 1px;
   }
   .imgdescuento {
     width: 100%;
@@ -2080,8 +2076,8 @@ textarea {
   .caja1 {
     display: flex;
     width: 100%;
-    height: 400px;
-    background-color: #ffffff;
+    height: 385px;
+    background-color: #ffeffa;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-around;
@@ -2095,6 +2091,7 @@ textarea {
     font-family: "fuentetitulos";
     font-style: normal;
     text-decoration: none;
+    background-color: #fefbff;
   }
   .presentacion {
     height: 100%;
@@ -2186,7 +2183,7 @@ textarea {
 
   /* SECCION 3 */
   .seccion3 {
-    background-color: #e2dde0;
+    background-color: #ffffff;
     width: 100%;
     height: 100%;
   }
@@ -2358,10 +2355,8 @@ textarea {
   }
   .videobeneficios {
     display: flex;
-    height: 1001px;
-    padding: 245px;
-    margin-left: -209px;
-    margin-top: -208px;
+    width: 100%;
+    height: 200px;
     align-items: stretch;
   }
 
@@ -2380,7 +2375,8 @@ textarea {
   /* SECCION PROCESO CREATIVO */
   .proceso {
     width: 100%;
-    height: 1235px;
+    flex-direction: column;
+    display: flex;
     background-color: #ffffff;
   }
   .headpages-proceso {
