@@ -2347,6 +2347,7 @@ textarea {
   }
   /* BENEFICIOS */
   .page-beneficio {
+    width: 100%;
     background-image: none;
     background-color: #fee7f0;
   }
