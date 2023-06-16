@@ -349,12 +349,8 @@ textarea {
 .cuidado-titulo {
   font-size: 45px;
   font-family: "letratitulo2";
+  letter-spacing: normal;
 }
-.page-cuidado {
-  display: grid;
-  width: 100%;
-}
-
 .page-cuidado {
   display: grid;
   width: 100%;
@@ -536,48 +532,39 @@ textarea {
 }
 
 /* SECCION PROCESO CREATIVO */
-.proceso {
-  width: 100%;
-  height: 850px;
-  background-image: url("/img/fondo.jpeg");
-}
-.headpages-proceso {
-  height: 100%;
-  width: 100%;
-  background-color: #f8c7da;
-}
 .proceso-titulo {
-  font-family: "menu";
   font-size: 45px;
+  font-family: "letratitulo2";
   letter-spacing: normal;
 }
-.video {
+.container-proceso {
   display: flex;
-  background-color: #ffffff;
-  width: 600px;
-  height: 688px;
-  margin-top: 40px;
-  padding: 20px;
-  justify-content: space-around;
+  flex-direction: row-reverse;
+  width: 1325px;
 }
-.titulopasos {
+.tx-proceso {
   display: flex;
-  font-size: 30px;
-  justify-content: center;
-  background-color: #f893e6c7;
-}
-.texto-proceso {
-  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-family: "menus";
+  align-items: center;
   width: 800px;
-  height: 820px;
-  margin-top: -670px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  font-weight: "menus";
 }
 .paso {
-  background-color: #f9bed5;
+  width: 195px;
+  font-size: 22px;
+  background-color: rgb(246, 174, 230);
+}
+.titulospaso {
+  display: flex;
+  font-weight: bold;
+}
+.videoproceso {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  height: 300px;
+  padding: 45px;
 }
 .footer {
   height: 210px;
@@ -592,20 +579,24 @@ textarea {
   letter-spacing: 3px;
 }
 /* BENEFICIOS */
+
 .page-beneficio {
+  display: flex;
+  flex-direction: column;
   background-image: url("/img/fondo.jpeg");
 }
 .beneficios-titulo {
   font-size: 45px;
-  letter-spacing: normal;
   font-family: "letratitulo2";
+  letter-spacing: normal;
 }
 .videobeneficios {
   display: flex;
-  height: 1001px;
-  padding: 245px;
+  height: 300px;
+  width: 300px;
+  padding: 24px;
   margin-left: -35px;
-  margin-top: -168px;
+
   align-items: stretch;
 }
 
@@ -1909,59 +1900,23 @@ textarea {
   .videobeneficio {
     display: flex;
     height: 600px;
+    padding: 20px;
+  }
+  .footer {
+    width: 100%;
+  }
 
-    padding: 20px;
-  }
-  .footer {
-    width: 100%;
-  }
   /* SECCION PROCESO CREATIVO */
-  .proceso {
-    width: 100%;
-    height: 1235px;
-    background-color: #ffffff;
-  }
-  .headpages-proceso {
-    height: 100%;
-    width: 100%;
-    background-color: #f8c7da;
-  }
   .proceso-titulo {
-    font-family: "menu";
-    font-size: 40px;
-    letter-spacing: normal;
+    font-family: "letratitulo2";
+    font-weight: lighter;
   }
-  .video {
+  .container-proceso {
     display: flex;
-    background-color: #ffffff;
-    width: 520px;
-    height: 688px;
-    margin-top: 40px;
-    padding: 20px;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    width: 1000px;
   }
-  .titulopasos {
-    display: flex;
-    font-size: 25px;
-    justify-content: center;
-    background-color: #f893e6c7;
-  }
-  .texto-proceso {
-    display: flex;
-    width: 380px;
-    margin-left: 550px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    font-weight: "menus";
-  }
-  .paso {
-    background-color: #f9bed5;
-  }
-  .footer {
-    height: 100%;
-    background-color: rgba(171, 76, 88, 0.8);
-  }
+
   /* BENEFICIOS */
   .page-beneficio {
     background-image: url("/img/fondo.jpeg");
@@ -2245,6 +2200,7 @@ textarea {
     height: 70px;
   }
   .mf {
+    background-color: #f9bed5;
     list-style: none;
     padding: 35px;
     margin: 0;
@@ -2256,7 +2212,7 @@ textarea {
     display: inline-block;
   }
   .menufinal li a:hover {
-    background-color: #fee7f0;
+    background-color: #f9bed5;
   }
   .copy,
   .copy2 {
@@ -2373,50 +2329,39 @@ textarea {
     font-size: 20px;
   }
   /* SECCION PROCESO CREATIVO */
-  .proceso {
-    width: 100%;
-    flex-direction: column;
-    display: flex;
-    background-color: #ffffff;
-  }
-  .headpages-proceso {
-    height: 100%;
-    width: 100%;
-    background-color: #f8c7da;
-  }
   .proceso-titulo {
-    font-family: "menu";
-    font-size: 40px;
+    font-family: "letratitulo2";
+
     letter-spacing: normal;
   }
-  .video {
+  .container-proceso {
     display: flex;
-    background-color: #ffffff;
-    width: 439px;
-    height: 468px;
-
-    padding: 20px;
-    justify-content: space-around;
-  }
-  .titulopasos {
-    display: flex;
-    font-size: 25px;
-    justify-content: center;
-    background-color: #f893e6c7;
-  }
-  .texto-proceso {
-    display: flex;
-    width: 391px;
-    margin-left: 3px;
+    flex-direction: column-reverse;
+    width: 390px;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+  }
+  .tx-proceso {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "menus";
+    align-items: center;
+    width: 400px;
   }
   .paso {
-    background-color: #f9bed5;
+    width: 195px;
+    font-size: 22px;
+    background-color: rgb(246, 174, 230);
   }
-  .footer {
-    height: 100%;
-    background-color: rgba(171, 76, 88, 0.8);
+  .titulospaso {
+    display: flex;
+    font-weight: bold;
+  }
+  .videoproceso {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 405px;
+    height: 630px;
   }
   /* SECCION CONOCEME */
 
